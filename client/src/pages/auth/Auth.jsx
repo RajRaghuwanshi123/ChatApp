@@ -12,7 +12,9 @@ import { useAppStore } from "@/store";
 
 export default function Auth() {
   const { setUserInfo } = useAppStore();
+
   const [email, setemail] = useState("");
+  const [emails, setemails] = useState("");
   const [password, setpassword] = useState("");
   const [confirmPassword, setconfirmPassword] = useState("");
   const navigate = useNavigate();
